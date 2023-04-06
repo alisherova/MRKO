@@ -1,0 +1,26 @@
+.modal {
+    opacity: 0;
+    visibility: hidden;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: 0.3s ease-in-out;
+}
+
+.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal__content {
+    transition: inherit;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-100px);
+}
+
+
+
+.active .modal__content {
+    opacity: 1;
+    visibility: visible;
+    /* transform: translateY(0 ); */
+}

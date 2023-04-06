@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .nav_desktop_item {
+        @apply hover:bg-gray-700  hover:text-white px-3 py-2 rounded-md text-sm font-medium flex items-center gap-2
+    } 
+
+    .nav_item {
+        @apply hover:bg-gray-700 items-center gap-2 px-3 py-2 rounded-md text-base font-medium 
+    }
+
+    .burger_menu {
+        @apply bg-gray-400 dark:bg-gray-900 inline-flex items-center justify-center p-2 rounded-md text-white dark:text-gray-400 hover:text-white hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white
+    }
+
+    body {
+        @apply dark:text-white text-black
+    }
+
+    .roleLink {
+        @apply py-3 px-14 bg-white rounded border border-gray-300 text-black text-center dark:hover:opacity-90 hover:scale-105
+    }
+
+    .loginInput {
+        @apply rounded w-full p-2 outline-none border border-gray-300
+    }
+
+    .visibility {
+        height: calc(100% - 2px);
+        @apply absolute flex items-center top-[1px] right-[1px] rounded bg-white px-3
+    }
+
+    .loginBtn {
+        @apply py-2 hover:cursor-pointer hover:opacity-80 rounded
+    }
+
+    .tabletLogIn {
+        @apply md:bg-none bg-[url('./assets/download.jpg')] bg-no-repeat bg-cover
+    }
+
+    .formInput {
+        @apply block w-full px-4 py-2 mt-2 text-indigo-700 bg-white border rounded-md focus:border-indigo-400 focus:ring-indigo-300 focus:outline-none focus:ring focus:ring-opacity-40
+    }
+
+    .labelClass {
+        @apply block text-sm font-semibold text-gray-800
+    }
+
+    .table {
+        @apply border border-slate-500 dark:border-white min-w-full
+    }
+
+    .thead {
+        @apply text-left h-10 sm:h-14 bg-slate-300 dark:bg-green-500
+    }
+
+    .th {
+        @apply border-slate-500 border dark:border-white px-2 sm:px-4
+    }
+
+    .td {
+        @apply border border-slate-500 dark:border-white border-r px-2 sm:px-4 sm:py-2
+    }
+
+    .numberInput{
+        @apply w-1/2 rounded inline-block pr-2 py-2
+    }
+
+    .checkboxInput{
+        @apply flex items-end gap-3 py-2
+    }
+    .Cards{
+        @apply m-5 rounded-xl w-2/3 md:w-1/3 p-3 md:p-5 shadow dark:shadow-gray-300  shadow-indigo-300
+    }
+    .CardsBody{
+        @apply flex justify-between  border-b border-indigo-300 dark:border-gray-300 pt-3 pb-1
+    }
+    .CardsTitle{
+        @apply font-semibold dark:text-white text-violet-700
+    }
+}
+
+.checkboxInput input[type=checkbox]{
+    accent-color: rgb(18, 18, 146);
+    width: 1.1rem !important;
+    height: 1.1rem !important;
+}
